@@ -13,7 +13,10 @@ const useStyles = makeStyles(theme => ({
   p: {
     color: "#2e2e38",
     fontWeight: "300",
-    paddingBottom: "1rem"
+    paddingBottom: "1rem",
+    [theme.breakpoints.down('sm')]:{
+      fontSize:'1.7rem'
+    }
   },
   sub:{
     color: "#2e2e38",

@@ -31,7 +31,15 @@ const useStyles = makeStyles(theme => ({
   },
   description: {
     padding: "1em 0em 2em",
-    fontWeight: "300"
+    fontWeight: "300",
+    [theme.breakpoints.down('sm')]:{
+      fontSize:'16px'
+    }
+  },
+  head:{
+    [theme.breakpoints.down('sm')]:{
+      fontSize:'2rem'
+    }
   }
 }));
 export default function MainFeaturedPost(props) {
@@ -64,6 +72,7 @@ export default function MainFeaturedPost(props) {
         <Grid item md={6}>
           <div className={classes.mainFeaturedPostContent}>
             <Typography
+              className={classes.head}
               component="h1"
               variant="h3"
               color="inherit"
@@ -72,6 +81,7 @@ export default function MainFeaturedPost(props) {
               {post.title}
             </Typography>
             <Typography
+              className={classes.head} 
               component="h1"
               variant="h3"
               color="inherit"

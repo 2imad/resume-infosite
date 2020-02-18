@@ -17,10 +17,29 @@ export const useDashboardStyles = makeStyles(theme => ({
   },
   cardContent: {
     display: "flex",
-    justifyContent: "center"
+    justifyContent: "center",
+    [theme.breakpoints.down('sm')]:{
+      padding:'0px'
+    }
   },
   container: {
     paddingBottom: "2rem"
+  },
+  reactPlayer:{
+    [theme.breakpoints.down('sm')]:{
+      width:"100%",
+      height:"100%",
+      maxWidth:"100%"
+      
+    }
+  },
+  playerWrapper:{
+    position:"relative",
+    paddingTop:"56,25%",
+    [theme.breakpoints.down('sm')]:{
+      maxWidth:"100%"
+
+    }
   }
 }));
 
@@ -31,8 +50,8 @@ const VideoCard = () => {
       <Grid item xs={12} sm={12} md={12}>
         <Card className={classes.card}>
           <CardContent className={classes.cardContent}>
-            <CardMedia >
-              <ReactPlayer url="https://youtu.be/YdyhaE6ltWw " />
+            <CardMedia  className={classes.playerWrapper}>
+              <ReactPlayer className={classes.reactPlayer} url="https://youtu.be/YdyhaE6ltWw" controls/>
             </CardMedia>
           </CardContent>
         </Card>
