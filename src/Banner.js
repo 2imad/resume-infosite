@@ -40,9 +40,10 @@ export default function MainFeaturedPost(props) {
   const post = {
     image: "./assets/change_banner.jpg",
     imageText: "Lorem",
-    title: "Title of a longer featured blog post",
+    title: "EY Change Awards:",
+    sub:"The CV Builder",
     description:
-      "Multiple lines of text that form the lede, informing new readers quickly and efficiently about what's most interesting in this post's contents."
+      "The CV Builder is a tool to help you build a better resume. Save all your credentials in a database, search for profiles and create a formatted CV in no time!"
   };
 
   return (
@@ -69,6 +70,14 @@ export default function MainFeaturedPost(props) {
               gutterBottom
             >
               {post.title}
+            </Typography>
+            <Typography
+              component="h1"
+              variant="h3"
+              color="inherit"
+              gutterBottom
+            >
+              {post.sub}
             </Typography>
             <Typography
               className={classes.description}

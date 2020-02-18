@@ -15,6 +15,13 @@ const useStyles = makeStyles(theme => ({
     fontWeight: "300",
     paddingBottom: "1rem"
   },
+  sub:{
+    color: "#2e2e38",
+    fontWeight: "300",
+    paddingBottom: "1rem",
+    maxWidth:"50%",
+    margin:"0 auto"
+  },
   icon: {
     fontSize: "4.1875rem",
     color: "#2e2e38"
@@ -35,6 +42,9 @@ const DividerApp = props => {
           <div className={classes.banner}>
             <Typography className={classes.p} component="h4" variant="h4">
               {props.title}
+            </Typography>
+            <Typography className={classes.sub} >
+              {props.sub}
             </Typography>
             <KeyboardArrowDown className={classes.icon} fontSize="large" />
           </div>

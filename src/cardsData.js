@@ -21,7 +21,7 @@ export const CardsData = [
   },
   {
     icon: <Search style={{ fontSize: 90, color: "#ffe600" }} />,
-    text: "Ready implemented with a search function"
+    text: "Ready to be implemented with a search function"
   },
   {
     icon: <SupervisorAccount style={{ fontSize: 90, color: "#ffe600" }} />,
