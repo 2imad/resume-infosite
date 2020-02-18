@@ -31,7 +31,7 @@ const VideoCard = () => {
       <Grid item xs={12} sm={12} md={12}>
         <Card className={classes.card}>
           <CardContent className={classes.cardContent}>
-            <CardMedia justifyContent="center">
+            <CardMedia >
               <ReactPlayer url="https://youtu.be/YdyhaE6ltWw " />
             </CardMedia>
           </CardContent>
